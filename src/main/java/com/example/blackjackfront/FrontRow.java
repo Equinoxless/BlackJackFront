@@ -51,7 +51,7 @@ public class FrontRow {
 
             cardContent.getChildren().addAll(valueText, suitImage);
 
-            Rectangle background = new Rectangle(100, 150, Color.GHOSTWHITE);
+            Rectangle background = new Rectangle(100, 167, Color.GHOSTWHITE);
 
             cardPic.getChildren().addAll(background, cardContent);
 
@@ -67,7 +67,7 @@ public class FrontRow {
     }
     public void makeTopRow(BorderPane table){
         HBox cardrow = this.makeRow();
-        // Position the card group at the bottom center of the table
+        // Position the card group at the top center of the table
         BorderPane.setAlignment(cardrow, Pos.CENTER);
         table.setTop(cardrow);
     }

@@ -35,6 +35,9 @@ public class FrontEnd extends Application {
         fr.makeBotRow(tableLayout);
         fr.makeTopRow(tableLayout);
 
+        FrontPack fp = new FrontPack(cards);
+        fp.makePack(tableLayout);
+
         // Create the scene and show the stage
         Scene scene = new Scene(tableLayout, 800, 600);
         primaryStage.setScene(scene);
